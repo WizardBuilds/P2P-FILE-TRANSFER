@@ -10,7 +10,7 @@ def send_ui():
         print("No files to send!!")
         return
     print("\n Select file:")
-    for i,f in enumerate(files):# it is used for accessing the index and file
+    for i,f in enumerate(files):
         size=os.path.getsize(os.path.join(Shared_Dir,f))
         print(f"[{i+1}] {f} ({size} bytes)")
     idx=int(input("Choice: "))-1
